@@ -3,6 +3,6 @@ const path = require("path");
 const app = express();
 app.use(express.static(__dirname + "/dist/herodep-b"));
 app.get("*", function (req, res) {
-  res.sendFile("./dist/herodep-b/index.html");
+  res.sendFile("/dist/herodep-b/index.html");
 });
 app.listen(process.env.PORT || 8080);
